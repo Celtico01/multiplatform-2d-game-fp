@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://ct57t5xsltdd7"]
+[gd_scene load_steps=13 format=3 uid="uid://ct57t5xsltdd7"]
 
 [ext_resource type="PackedScene" uid="uid://dbehvyerd3450" path="res://scenes/player.tscn" id="1_1euw1"]
 [ext_resource type="Texture2D" uid="uid://co4vsamxxxars" path="res://assets/sprites/world_tileset.png" id="2_4tygv"]
 [ext_resource type="PackedScene" uid="uid://6xswibpr0ldv" path="res://scenes/grassPlatform.tscn" id="3_bsjxe"]
+[ext_resource type="PackedScene" uid="uid://dfb7qfjf0ilu7" path="res://scenes/coin.tscn" id="4_xfi45"]
 
 [sub_resource type="Animation" id="Animation_ovs57"]
 length = 5.0
@@ -511,3 +512,9 @@ position = Vector2(-33, -128)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -5)
 zoom = Vector2(3, 3)
+
+[node name="Coin" parent="." instance=ExtResource("4_xfi45")]
+position = Vector2(327, 280)
+
+[node name="Coin2" parent="." instance=ExtResource("4_xfi45")]
+position = Vector2(-57, 87)
